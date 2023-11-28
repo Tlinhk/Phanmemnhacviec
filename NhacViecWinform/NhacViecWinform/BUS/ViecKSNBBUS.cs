@@ -32,7 +32,7 @@ namespace NhacViecWinform.BUS
 
         public object CapNhatPhuTrachTrungTamBUS(string phutrach, int trungtam_id, int taikhoan_phutrach_id)
         {
-            
+
             ViecKSNBDTO.Phutrach = phutrach;
             ViecKSNBDTO.Trungtam_id = trungtam_id;
             ViecKSNBDTO.Taikhoan_phutrach_id = taikhoan_phutrach_id;
