@@ -66,7 +66,7 @@ namespace NhacViecWinform
             }
 
             timer1.Tick += new EventHandler(timer1_Tick);
-            
+
             gridView1.DoubleClick += new EventHandler(gridView1_DoubleClick);
             gridView1.Click += new EventHandler(gridView1_Click);
             subHoTen.Caption = UserBUS.SelectFullnameUserBUS();

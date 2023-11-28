@@ -75,7 +75,7 @@ namespace NhacViecWinform.GUI.KSNB
                     hoantat = 1;
                 }
                 TonDongBUS.SuaTonDongBUS(TonDongDTO.Id, Trungtam_id, txtTenKho.Text, NgayHoSo, txtTenVacXin.Text, meNguyenNhan.Text, hoantat, Hoso_id, BienToanCuc.UserID);
-                
+
                 TheoDoiBUS.ThemHoacSuaTheoDoiBUS(TonDongDTO.Id, NgayTheoDoi, meTinhTrang.Text, meHuongXuLy.Text);
 
                 gcTonDongCT.DataSource = TheoDoiBUS.LayDanhSachTheoDoiBUS(TonDongDTO.Id);

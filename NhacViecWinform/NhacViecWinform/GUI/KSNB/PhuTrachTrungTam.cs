@@ -44,7 +44,7 @@ namespace NhacViecWinform.GUI.KSNB
                     }
                     else
                     {
-                        if(phutrach == BienToanCuc.phutrach_khong)
+                        if (phutrach == BienToanCuc.phutrach_khong)
                         {
                             ViecKSNBBUS.XoaPhuTrachTrungTamBUS(trungtam_id, BienToanCuc.UserID);
                         }
