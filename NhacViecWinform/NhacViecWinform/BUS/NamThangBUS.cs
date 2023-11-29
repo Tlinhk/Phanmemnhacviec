@@ -15,7 +15,7 @@ namespace HoTroNhacViecWinform.BUS
             // khởi tạo cột cho Datatable đã khai báo ở trên
             dt.Columns.Add(new DataColumn("nam", typeof(string)));
             // Add du lieu vao dt
-            for(int i = 2020; i <= 2100; i++)
+            for (int i = 2020; i <= 2100; i++)
             {
                 dt.Rows.Add(i);
             }

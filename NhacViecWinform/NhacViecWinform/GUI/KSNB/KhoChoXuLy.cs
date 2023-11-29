@@ -48,7 +48,7 @@ namespace HoTroNhacViecWinform.GUI.KSNB
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            if(gcTonKhoChoXuLy.DataSource != null)
+            if (gcTonKhoChoXuLy.DataSource != null)
             {
                 //Doc tong so dong tren luoi
                 int rowTonKhoChoXuLy = 0;
@@ -105,7 +105,7 @@ namespace HoTroNhacViecWinform.GUI.KSNB
                         gcTonKhoChoXuLy.DataSource = null;
                         XtraMessageBox.Show(BienToanCuc.ShowSuccess, BienToanCuc.ShowAlert);
                     }
-                }   
+                }
             }
             else
             {
