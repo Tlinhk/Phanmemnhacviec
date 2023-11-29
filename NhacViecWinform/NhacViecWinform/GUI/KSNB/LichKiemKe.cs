@@ -48,7 +48,7 @@ namespace HoTroNhacViecWinform.GUI.KSNB
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            if(gcLichKiemKe.DataSource != null)
+            if (gcLichKiemKe.DataSource != null)
             {
                 //Doc tong so dong tren luoi
                 int rowLichKiemKe = 0;
@@ -85,7 +85,7 @@ namespace HoTroNhacViecWinform.GUI.KSNB
                                 string nhanvien_chinh = gvLichKiemKe.GetRowCellValue(i, colNhanVienChinh).ToString();
                                 string nhanvien_phu = gvLichKiemKe.GetRowCellValue(i, colNhanVienPhu).ToString();
                                 string khoangcach = gvLichKiemKe.GetRowCellValue(i, colKhoangCach).ToString();
-                               
+
                                 KSNB_LichKiemKeBUS.ThemLichKiemKeBUS(trungtam, tenkho, thoigiankiemke, ngaykiemke, phongtiem_tong, phongtiem_nghi, phongtiem_kiemsang, nhanvien_chinh, nhanvien_phu, khoangcach, ngaycapnhat, nguoitao_id);
                             }
                         }
@@ -99,7 +99,7 @@ namespace HoTroNhacViecWinform.GUI.KSNB
                         gcLichKiemKe.DataSource = null;
                         XtraMessageBox.Show(BienToanCuc.ShowSuccess, BienToanCuc.ShowAlert);
                     }
-                }   
+                }
             }
             else
             {
