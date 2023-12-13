@@ -1,4 +1,4 @@
-﻿using DevExpress.XtraEditors;
+using DevExpress.XtraEditors;
 using NhacViecWinform.BUS;
 using NhacViecWinform.DTO;
 using System;
@@ -95,7 +95,7 @@ namespace NhacViecWinform.GUI.Kanban
 
         private void btnChonBoPhan_Click(object sender, EventArgs e)
         {
-            if (leChonBoPhan.EditValue.ToString() != "")
+            if (!string.IsNullOrEmpty(leChonBoPhan.EditValue.ToString()))
             {
                 gcThanhVien.DataSource = KB_CongViecBUS.ThemTheoBoPhanBUS(int.Parse(leChonBoPhan.EditValue.ToString()));
             }
@@ -103,7 +103,7 @@ namespace NhacViecWinform.GUI.Kanban
 
         private void btnChonThanhVien_Click(object sender, EventArgs e)
         {
-            if (leChonThanhVien.EditValue.ToString() != "")
+            if (!string.IsNullOrEmpty(leChonThanhVien.EditValue.ToString()))
             {
                 UserDTO = UserBUS.LayThanhVienTheoIdBUS(int.Parse(leChonThanhVien.EditValue.ToString()));
                 BoPhanDTO = BoPhanBUS.LayBoPhanTheoIdBUS(UserDTO.Bophan_id);
@@ -210,7 +210,7 @@ namespace NhacViecWinform.GUI.Kanban
                         if (gvCongViecChiTiet.GetRowCellValue(i, colCongViecChiTiet) != null)
                         {
                             string congviecchitiet = gvCongViecChiTiet.GetRowCellValue(i, colCongViecChiTiet).ToString();
-                            if (congviecchitiet != "")
+                            if (!string.IsNullOrEmpty(congviecchitiet))
                             {
                                 //Them du lieu vao csdl
                                 KB_CongViecChiTietBUS.TaoCongViecChiTietBUS(congviecchitiet, NgayTao, nguoigui_id, hoanthanh);
@@ -295,7 +295,7 @@ namespace NhacViecWinform.GUI.Kanban
                         if (gvCongViecChiTiet.GetRowCellValue(i, colCongViecChiTiet) != null)
                         {
                             string congviecchitiet = gvCongViecChiTiet.GetRowCellValue(i, colCongViecChiTiet).ToString();
-                            if (congviecchitiet != "")
+                            if (!string.IsNullOrEmpty(congviecchitiet))
                             {
                                 //Them du lieu vao csdl
                                 KB_CongViecChiTietBUS.TaoCongViecChiTietBUS(congviecchitiet, NgayTao, nguoigui_id, hoanthanh);

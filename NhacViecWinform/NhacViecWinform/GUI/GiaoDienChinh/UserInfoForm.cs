@@ -1,4 +1,4 @@
-﻿using DevExpress.XtraEditors;
+using DevExpress.XtraEditors;
 using HoTroNhacViecWinform.BUS;
 using NhacViecWinform.BUS;
 using NhacViecWinform.DTO;
@@ -69,7 +69,7 @@ namespace NhacViecWinform.GUI
             {
                 if (btc.CheckEmail(txtEmail.Text))
                 {
-                    if (txtMatKhau.Text != "")
+                    if (!string.IsNullOrEmpty(txtMatKhau.Text))
                     {
                         matkhau = txtMatKhau.Text;
                     }

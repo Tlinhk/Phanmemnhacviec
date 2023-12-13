@@ -1,4 +1,4 @@
-﻿using DevExpress.XtraEditors;
+using DevExpress.XtraEditors;
 using HoTroNhacViecWinform.BUS;
 using NhacViecWinform.BUS;
 using NhacViecWinform.DTO;
@@ -34,7 +34,7 @@ namespace HoTroNhacViecWinform.GUI.Quan_tri
 
             if (DevExpress.XtraEditors.XtraDialog.Show(myControl, BienToanCuc.ShowConfirm, MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                if (BienToanCuc.ThemThongTin != "")
+                if (!string.IsNullOrEmpty(BienToanCuc.ThemThongTin))
                 {
                     tenmoi = BienToanCuc.ThemThongTin;
 
@@ -208,7 +208,7 @@ namespace HoTroNhacViecWinform.GUI.Quan_tri
 
         private void btnThemBoPhan_Click(object sender, EventArgs e)
         {
-            if (txtThemBoPhan.Text != "")
+            if (!string.IsNullOrEmpty(txtThemBoPhan.Text))
             {
                 ten = txtThemBoPhan.Text;
                 if (XtraMessageBox.Show(BienToanCuc.ShowConfirm, BienToanCuc.ShowAlert, MessageBoxButtons.YesNo) == DialogResult.Yes)
@@ -230,7 +230,7 @@ namespace HoTroNhacViecWinform.GUI.Quan_tri
 
         private void btnThemTrungTam_Click(object sender, EventArgs e)
         {
-            if (txtThemTrungTam.Text != "")
+            if (!string.IsNullOrEmpty(txtThemTrungTam.Text))
             {
                 ten = txtThemTrungTam.Text;
                 if (XtraMessageBox.Show(BienToanCuc.ShowConfirm, BienToanCuc.ShowAlert, MessageBoxButtons.YesNo) == DialogResult.Yes)
@@ -252,7 +252,7 @@ namespace HoTroNhacViecWinform.GUI.Quan_tri
 
         private void btnThemChucDanh_Click(object sender, EventArgs e)
         {
-            if (txtThemChucDanh.Text != "")
+            if (!string.IsNullOrEmpty(txtThemChucDanh.Text))
             {
                 ten = txtThemChucDanh.Text;
                 if (XtraMessageBox.Show(BienToanCuc.ShowConfirm, BienToanCuc.ShowAlert, MessageBoxButtons.YesNo) == DialogResult.Yes)
@@ -274,7 +274,7 @@ namespace HoTroNhacViecWinform.GUI.Quan_tri
 
         private void btnThemDanhMuc_Click(object sender, EventArgs e)
         {
-            if (txtThemDanhMuc.Text != "")
+            if (!string.IsNullOrEmpty(txtThemDanhMuc.Text))
             {
                 ten = txtThemDanhMuc.Text;
                 if (XtraMessageBox.Show(BienToanCuc.ShowConfirm, BienToanCuc.ShowAlert, MessageBoxButtons.YesNo) == DialogResult.Yes)
@@ -296,7 +296,7 @@ namespace HoTroNhacViecWinform.GUI.Quan_tri
 
         private void btnThemHoSo_Click(object sender, EventArgs e)
         {
-            if (txtThemHoSo.Text != "")
+            if (!string.IsNullOrEmpty(txtThemHoSo.Text))
             {
                 ten = txtThemHoSo.Text;
                 if (XtraMessageBox.Show(BienToanCuc.ShowConfirm, BienToanCuc.ShowAlert, MessageBoxButtons.YesNo) == DialogResult.Yes)
